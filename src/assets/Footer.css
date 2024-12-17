@@ -1,0 +1,57 @@
+.footer {
+    background: linear-gradient(127deg, #9F0707 13%, #2F6980 76%);
+    padding: 2rem 0;
+    color: #f6f6f6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer ul li a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footlogo {
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.footer-divider {
+    color: #f6f6f6;
+    background-color: #f6f6f6;
+    height: 2px;
+    border: none;
+    width: 85%;
+    margin: 1.5rem auto;
+}
+
+.social-link {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,73 @@
+.continter{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+  
+
+  .loginh2{
+    margin-right: 18rem;
+    margin-top: 2px;
+  }
+  .subtitle{
+    margin-right: 13rem;
+    font-size: 14px;
+  }
+  .submitbutton{
+    width: 40%;
+    margin-top: 25px;
+  }
+  .line{
+    min-width: 25%;
+    min-height: 0.2%;
+    background-color: lightgray;
+  }
+
+  .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 1px;
+  }
+  
+  .submitbutton {
+    margin-top: 20px;
+    width: 50%;
+  }
+  
+  .text-decoration-none {
+    color: blue;
+  }
+  .mamathalogo{
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .password-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .toggle-password:hover {
+    color: #000;
+  }
+

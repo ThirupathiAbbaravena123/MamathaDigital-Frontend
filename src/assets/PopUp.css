@@ -1,0 +1,141 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: #fff;
+  width: 50%;
+  margin-top: 10px;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.popup h2 {
+  color: white;
+  background-color: #d42b2b;
+  text-align: center;
+  padding: 10px 0; 
+  margin: -20px -20px 20px -20px; 
+  /* border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; */
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #f4efef;
+}
+
+.close:hover {
+  color: #faf8f8;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+.address-type label {
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.proceed-btn {
+  background: #d42b2b;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.proceed-btn:hover {
+  background: #b92424;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 20px); 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  margin-right: 60px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+.address-type {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-type div {
+  display: flex;
+  gap: 4rem;
+}
+
+input[type="radio"] {
+  accent-color: #d42b2b; 
+}
+
+
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%; 
+  }
+}

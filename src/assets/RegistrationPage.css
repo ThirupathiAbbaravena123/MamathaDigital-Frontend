@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .registration-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+  }
+  .left-section {
+    width: 40%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+ 
+  }
+  
+   .logo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  } 
+  
+  
+  .right-section {
+    margin-top: 5px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  
+  .form-box {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    bottom: 2px;
+    margin-bottom: 5px;
+  }
+  
+  
+  .terms-label {
+    display: block;
+    padding: 0;
+    width: 100%;
+    padding-left: 15px;
+    text-indent: -15px;
+    border: 0px solid;
+    flex-direction: column;
+  }
+  
+  .terms-label .checkType  {
+    width: 13px;
+    height: 15px;
+    padding: 0;
+    margin:0;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  
+  .terms-label a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .terms-label a:hover {
+    text-decoration: underline;
+  }
+  input[type="checkbox"]
+{
+    vertical-align:start;
+}
+  
+  .submit-btn {
+    width: 100%;
+    background: #8e0e00;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .submit-btn:hover {
+    background: #6c0b00;
+  }
+  
+  .login-link a,
+  .or-login {
+    text-align: center;
+    margin: 15px 5px;
+    font-size: 0.9rem; 
+    text-decoration: none;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .social-btn i {
+    font-size: 1.2rem;
+  }
+
+  .password-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .toggle-password:hover {
+    color: #000;
+  }
+  
+  .required {
+    color: red;
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+  .address-type {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .address-type div {
+    display: flex;
+    gap: 4rem;
+  }
+  
+  input[type="radio"] {
+    accent-color: #d42b2b; 
+    margin-right: 6px;
+  }
