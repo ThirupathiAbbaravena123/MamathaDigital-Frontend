@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: gray; */
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; 
+    overflow: hidden;  */
+    min-height: 100vh;
+    
+  }
+  
+  .header {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    /* background-color: red; */
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .main-content {
+    display: flex;
+    height: calc(100vh - 70px);
+     flex: 1; /* Grow to take up remaining space */
+    /* overflow: hidden;  */ 
+  }
+  
+  /* .sidebar {
+    width: 200px;
+     background-color: #f8f8f8; 
+    padding: 20px;
+    /* border-right: 1px solid #ddd; */
+   /* flex: 2; */
+   /* overflow: hidden; */
+   /* overflow-y: auto;  */
+  /* }  */
+  
+  .sidebar {
+    width: 300px;
+    background-color: #f8f8f8; /* Ensures consistent background color */
+    padding: 70px;
+    border-right: 1px solid #ddd;
+    /* overflow-y: auto; */
+    height: 420px; /* Ensures the sidebar takes up the full height of its container */
+    box-sizing: border-box; 
+  }
+  
+  
+  .sidebar-button,
+  .logout-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+      background-color: #fff;  
+    border: 1px solid #f7f4f4;  
+    text-align: left;
+    cursor: pointer;
+  }
+  .sidebar-button:hover,
+  .logout-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .logout-button {
+     /* background-color:#313131; */
+    color:black;  
+     border: none; 
+    margin-top: 100px;
+   
+  }
+  
+  .profile-container {
+    flex: 1;
+    padding: 20px;
+   align-content: 'Center';
+  }
+  hr{
+    width: 60%;
+    margin-left: 180px;
+    margin-top: -30px;
+  }
+  
+  
+  .profile-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .edit-button,
+  .save-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .app {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+     overflow-y: auto;  
+  }
+  .sidebar-icon {
+    width: 15px; 
+    height: 15px; 
+    margin-right: 8px; 
+  }
+  
+  .search-button{
+   background-color:#9F0707;
+   margin-left: -20px;
+  }
+  body{
+    margin: 0;
+    overflow-y: auto;
+  }
+  
+  
+  
+  
