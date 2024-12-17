@@ -13,7 +13,11 @@ import AcrylicPhotoFrames from "./components/AcrylicPhotoFrames";
 import ProductDetails from "./components/ProductDetails";
 import HomePage from './pages/HomePage'
 import Navbar from './components/Navbar'
-
+import LoginPage from './pages/LoginPage'
+import RegistrationPage from './pages/RegistrationPage'
+import Footer from './components/Footer'
+import Dashboard from './components/Dashboard'
+import CartItems from './components/CartItems'
 import "./App.css";
 
 const App = () => {
@@ -37,9 +41,18 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/login" element = {<LoginPage />} />
+        <Route path="/signup" element={<RegistrationPage /> } />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/cartitems" element={<CartItems />} />
+        <Route path="/stampmodel" element={<TopStampModel />} />
+        <Route path="/stampdetials/:id" element={<Stampmodel />} />
         <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

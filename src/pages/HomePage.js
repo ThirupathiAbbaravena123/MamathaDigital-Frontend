@@ -27,7 +27,7 @@ const HomePage = () => {
             <li className=" dropdowncolor  middleli">
             <a className="nav-link dropdown-toggle nabaritems  " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categories</a>
               <ul className="dropdown-menu drop ">
-                <li><a className="dropdown-item " href="#">Stamps</a></li>
+                <li><a className="dropdown-item " href="/stampmodel">Stamps</a></li>
                 <li><hr className="dropdown-divider " style={{"color":" rgb(210,20,20);"}} /></li>
                 <li><a className="dropdown-item " href="/acrylicPhotoFrames">Acrylic Photo Frames</a></li>
                 {/* <li><hr className="dropdown-divider " /></li>

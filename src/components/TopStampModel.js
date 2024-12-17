@@ -116,7 +116,7 @@ const products = [
             <div className="action-buttons">
               <button
                 className="view-button"
-                onClick={() => navigate(`/Stamp-model/${product.id}`, { state: { product } })}
+                onClick={() => navigate(`/stampdetials/${product.id}`, { state: { product } })}
               >View
               </button>
               <button className="add-to-cart-button">Add to Cart</button>
