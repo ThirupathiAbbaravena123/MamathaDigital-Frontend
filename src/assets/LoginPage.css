@@ -1,73 +1,169 @@
-.continter{
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.login-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.left-section {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.mamathalogo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-section {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 2rem;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.form-box p.subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+.toggle-password:hover {
+  color: #333;
+}
+
+.submitbutton {
+  width: 70%;
+  background: #8e0e00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.submitbutton:hover {
+  background: #6c0b00;
+}
+
+.text-danger {
+  font-size: 0.9rem;
+  color: #d9534f;
+  text-align: center;
+}
+
+.form-box a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background: #f4f4f4;
+}
+
+.social-btn i {
+  font-size: 1.2rem;
+}
+
+.subtitle{
+  margin-left: 0;
+}
+
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
     width: 100%;
-    display: flex;
-  }
-  
-
-  .loginh2{
-    margin-right: 18rem;
-    margin-top: 2px;
-  }
-  .subtitle{
-    margin-right: 13rem;
-    font-size: 14px;
-  }
-  .submitbutton{
-    width: 40%;
-    margin-top: 25px;
-  }
-  .line{
-    min-width: 25%;
-    min-height: 0.2%;
-    background-color: lightgray;
   }
 
-  .fa-google {
-    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  .mamathalogo {
+    height: 200px;
   }
-  .otp-input {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    text-align: center;
-    font-size: 20px;
-    border: 2px solid #ccc;
-    border-radius: 1px;
-  }
-  
-  .submitbutton {
-    margin-top: 20px;
-    width: 50%;
-  }
-  
-  .text-decoration-none {
-    color: blue;
-  }
-  .mamathalogo{
-    height: 100%;
-    width: 100%;
-  }
-
-
-  .password-field {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .toggle-password {
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-    color: #888;
-  }
-  
-  .toggle-password:hover {
-    color: #000;
-  }
-
+}
