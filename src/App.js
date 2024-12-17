@@ -1,29 +1,48 @@
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React,{useState} from 'react'
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import Address from "./components/Address";
+import Profile from "./components/Profile";
+import Orders from "./components/Orders";
+import TopStampModel from "./components/TopStampModel";
+import Stampmodel from "./components/Stampmodel";
 import AcrylicPhotoFrames from "./components/AcrylicPhotoFrames";
 import ProductDetails from "./components/ProductDetails";
-import Navbar from '../src/components/Navbar'
-import Footer from '../src/components/Footer'
-import Login from './pages/LoginPage'
 import HomePage from './pages/HomePage'
-import RegistrationPage from './pages/RegistrationPage'
-import CartItems from './components/CartItems'
+import Navbar from './components/Navbar'
 
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [activePage, setActivePage] = useState("My Profile"); 
+
+  const renderContent = () => {
+    switch (activePage) {
+      case "My Profile":
+        return <Profile />;
+      case "My Address":
+        return <Address />;
+      case "My Orders":
+        return <Orders />;
+      default:
+        return <Profile />;
+    }
+  };
+
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<RegistrationPage />} />
         <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
-        <Route path="/cartitems" element={<CartItems />} />
       </Routes>
-      <Footer />
     </Router>
   );
-}
+};
 
 export default App;
+

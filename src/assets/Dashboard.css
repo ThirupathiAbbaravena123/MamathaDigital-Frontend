@@ -1,0 +1,98 @@
+*{
+    font-family:'Roboto';
+}
+.searchbar{
+    display: flex;
+    border: 1px solid black;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+input{
+    outline: none;
+    border: none;
+}
+.dropdownToggle{
+    background-color: rgb(226, 225, 224);
+    padding:3px 5px;
+    border: none;
+    border-radius: 10px; 
+}
+
+.loremPerson{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.dashboardContainer{
+    background-color: rgb(247, 242, 242);
+    background-size: cover;
+    height: 88vh;
+}
+.totalSale,.totalCustomer,.totalOrders,.today{
+    color: #979797;
+    font-size: 16px;
+}
+#selectDate{
+    padding: 5px 10px;
+    box-shadow: 1px 1px 5px rgb(172, 169, 169);
+    border: none;
+    outline: none;
+}
+.graphContainer{
+    background-color: #00FF55;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.graphContainer1{
+    background-color: rgb(231, 85, 85);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.tableContainer{
+    background-color: rgba(255, 255, 255, 0.828);
+    height: 58vh;
+    
+    border-radius: 10px;
+    padding: 20px;
+}
+#tableHead{
+    color: black;
+    background-color: rgb(237, 237, 237);
+    
+}
+.fa-bell{
+    font-size: larger;
+}
+
+#tablepayment,#tablepaymentYellow,#tablepaymentRed{
+    background-color: rgb(228, 247, 228);
+    padding: 5px 5px;
+    margin-left: 130px;
+    width: 110px;
+    border-radius: 20px;   
+}
+#tablepaymentYellow{
+    background-color: rgb(226, 236, 162);   
+}
+#tablepaymentRed{
+    background-color: rgb(244, 193, 193);   
+}
+.dash,.dash1{
+    text-decoration: none;
+    color:#9F0707;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.fa-receipt{
+    font-size: x-large;
+    color: #313131;
+}
+.dash1{
+    text-decoration: none;
+    color:#CDCDCD;
+    font-size:20px;
+}
+.h5{
+    font-weight: bold;
+}
