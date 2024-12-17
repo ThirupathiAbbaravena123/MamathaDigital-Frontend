@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Img11 from "../assets/image (1).jpg"
-import AddingAddress from './AddingAddress';
+import AddingAddress from '../components/AddingAddress'
 const CartItems = () => {
     const [showPopup, setShowPopup] = useState(false);
   return (
