@@ -9,8 +9,6 @@ import love from '../assets/icons/love.png';
 import square from '../assets/icons/square.png';
 
 
-
-
 const ProductDetails = () => {
   const location = useLocation();
   const { product } = location.state;
@@ -48,7 +46,7 @@ const ProductDetails = () => {
           <div className="price-section">
             <span className="discounted-price">₹{product.price}</span>
             <span className="original-price">₹{product.originalPrice}</span>
-          </div> 
+          </div>
           <p>size:
             <select className="size-dropdown" style={{ width: "140px", height: '35px', margin: '0px' }}>
               {product.sizeOptions.map((size, index) => (
@@ -63,7 +61,12 @@ const ProductDetails = () => {
             <span>Quantity:</span>
             <input type="number" min="1" defaultValue="1" />
           </div>
-          <textarea className="custom-text" placeholder="Enter text here"></textarea>
+          
+          <div class="text-container">
+           <label for="custom-text" class="text-label">Enter Text:</label>
+          <textarea id="custom-text" class="custom-text" placeholder="Enter text here"></textarea>
+          </div>
+
           <div className="shape-section">
             <label>Select your Frame Shape:</label>
 
