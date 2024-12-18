@@ -28,8 +28,8 @@ const Stampdetails = () => {
           </div>
 
           <div className="size-dropdown-section">
-            <label htmlFor="size-select">Select Size:</label>
-            <select id="size-select" className="size-dropdown">
+            <label htmlFor="size-select">Select Size:</label><br/>
+            <select id="size-select" className="size-dropdown1">
               {product.sizeOptions.map((size, index) => (
                 <option key={index} value={size}>
                   {size}
@@ -37,10 +37,23 @@ const Stampdetails = () => {
               ))}
             </select>
           </div>
-          <div className="Enter">
-             <label>Enter Text:</label> 
-            <input type="text"></input>
+          <div className="redbtn">
+          <button className="add-to-cart-button1">Add </button>
           </div>
+          {/* <div className="Enter">
+            <input type="text">Enter</input>
+          </div> */}
+         {/* <span>Enter Text</span>
+          <textarea className="custom-text" placeholder="Enter text here"></textarea> */}
+          <div className="quantity-selector">
+            <span>Quantity:</span>
+            <input type="number" min="1" defaultValue="1" />
+          </div>
+          <div class="text-container">
+           <label for="custom-text" class="text-label">Enter Text:</label>
+          <textarea id="custom-text" class="custom-text" placeholder="Enter text here"></textarea>
+         </div>
+
 
           <div className="ink-color-selection">
             <label>Select Your Ink Colour:</label>
@@ -76,15 +89,15 @@ const Stampdetails = () => {
           {product.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
-        </ul>
+          </ul>
         
       </div>
 
       <div className="customer-feedback">
         <h3>Customer Feedback</h3>
         {/* <p>⭐⭐⭐⭐☆ 4.5</p> */}
-        <textarea placeholder="Write your feedback here"></textarea>
-        <button className="New" >Submit</button>
+        <textarea className="Text" placeholder="Write your feedback here"></textarea><br/>
+        <button className="New " type="submit " >Submit</button>
       </div>
     </div>
   );

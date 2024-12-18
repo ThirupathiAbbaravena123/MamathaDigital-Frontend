@@ -36,7 +36,7 @@ const Address = () => {
 
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h2 style={{ marginBottom: '20px' }}>My Addresses</h2>
+      {/* <h2 style={{ marginBottom: '20px' }}>My Addresses</h2> */}
       <div style={{ maxWidth: '700px', margin: '0 auto' }}>
         {addresses.map((item) => (
           <div

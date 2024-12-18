@@ -5,7 +5,7 @@ import './Orders.css';
 function Orders() {
     return (
         <div className="orders-container">
-            <h2>My Orders</h2>
+            {/* <h2>My Orders</h2> */}
             
             <div className="order">
                 <div className="div">

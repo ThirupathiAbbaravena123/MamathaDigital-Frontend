@@ -1,16 +1,14 @@
-body {
+/* body {
     font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: gray; */
   }
   
   .app-container {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; 
-    overflow: hidden;  */
+
     min-height: 100vh;
     
   }
@@ -33,7 +31,6 @@ body {
   .search-bar {
     display: flex;
     gap: 10px;
-    /* background-color: red; */
   }
   
   .user-menu {
@@ -45,27 +42,17 @@ body {
   .main-content {
     display: flex;
     height: calc(100vh - 70px);
-     flex: 1; /* Grow to take up remaining space */
-    /* overflow: hidden;  */ 
+     flex: 1; 
   }
   
-  /* .sidebar {
-    width: 200px;
-     background-color: #f8f8f8; 
-    padding: 20px;
-    /* border-right: 1px solid #ddd; */
-   /* flex: 2; */
-   /* overflow: hidden; */
-   /* overflow-y: auto;  */
-  /* }  */
+
   
   .sidebar {
     width: 300px;
-    background-color: #f8f8f8; /* Ensures consistent background color */
+    background-color: #f8f8f8;
     padding: 70px;
     border-right: 1px solid #ddd;
-    /* overflow-y: auto; */
-    height: 420px; /* Ensures the sidebar takes up the full height of its container */
+    height: 420px; 
     box-sizing: border-box; 
   }
   
@@ -87,14 +74,13 @@ body {
   }
   
   .logout-button {
-     /* background-color:#313131; */
     color:black;  
      border: none; 
     margin-top: 100px;
    
-  }
+  } */
   
-  .profile-container {
+  /* .profile-container {
     flex: 1;
     padding: 20px;
    align-content: 'Center';
@@ -151,7 +137,7 @@ body {
   body{
     margin: 0;
     overflow-y: auto;
-  }
+  } */
   
   
   

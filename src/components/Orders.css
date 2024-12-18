@@ -36,7 +36,7 @@ hr{
    margin-bottom: 40px;
    /* background-color: #d3ed40; */
    /* padding: 10px; */
-   width: 910px;
+   width: 920px;
    height: 200px;
    
 }
@@ -44,7 +44,7 @@ hr{
 
 .div{
    background-color: #F4F6F8; 
-    width: 900px; 
+    width: 910px; 
     height: 80px; 
     margin-bottom: 30px;
 }
@@ -52,11 +52,11 @@ hr{
    /* display: flex;
    flex-direction: row; */
      margin-left: 300px; 
-     margin-top: -30px;
+     margin-top: -80px;
 } 
 .mamatha{
    margin-left: 500px; 
-   margin-top: -50px;
+   margin-top: -80px;
 }
 .Orderid{
    margin-left: 700px; 
@@ -94,7 +94,7 @@ hr{
    margin-left: 160px;
 } 
 .view-details{
-   margin-left: 610px;
+   margin-left: 750px;
    margin-top:-70px;
    text-decoration: none;
 }
