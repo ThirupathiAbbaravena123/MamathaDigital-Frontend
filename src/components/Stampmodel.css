@@ -1,5 +1,5 @@
 .product-title{
-  margin-left: -660px;
+  margin-left: -680px;
 }
 .image-section{
   width: 20px; 
@@ -10,25 +10,11 @@
   margin-top: 20px;
   padding-right: 10px;
 }
-
-
-
-
-
 .product-details-image{
   width: 100%;
   height:90%;
-  
-  
 }
- /* .add-to-cart-button {
- 
-.color-button-container {
-  display: flex;
-  flex-direction: column
-  align-items: center; 
-  gap: 10px; 
-} */
+
  .redbtn{
   margin-top: -26px;
  }
@@ -56,6 +42,7 @@
   width:500px;
   height: 100px;
 }
+
 .New{
   background-color: #9F0707; 
   color: white; 
@@ -64,6 +51,11 @@
   border: #9F0707;
 
 }
+.customer-feedback{
+  /* margin-right: -100px; */
+  margin-top: -80px;
+}
+
 .quantity-selector {
   margin: 10px 0;
   font-size: 14px;
@@ -102,4 +94,82 @@
   border-radius: 5px;         
   box-sizing: border-box;     
   resize: vertical;
+}
+.ink-colors {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; 
+  /* margin-left: 50px; */
+}
+
+.color-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 250px; /* Adjust width as needed */
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.color-button.selected {
+  border: 2px solid #000;
+}
+
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.color-scroll {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 250px; /* Adjust width as needed */
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.color-button.selected {
+  border: 2px solid #000;
+}
+
+.scroll-arrow1 {
+ width:30px;
+ border:white;
+}
+.scroll-arrow2{
+  width:30px;
+  border: white;
+  margin-left: -80px;
+
 }

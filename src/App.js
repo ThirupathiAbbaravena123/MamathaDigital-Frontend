@@ -3,7 +3,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React,{useState} from 'react'
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
 import Address from "./components/Address";
 import Profile from "./components/Profile";
 import Orders from "./components/Orders";
@@ -51,6 +50,8 @@ const App = () => {
         <Route path="/stampdetials/:id" element={<Stampmodel />} />
         <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
+        <Route path="/HomePage" element={<HomePage />} />
+  
       </Routes>
       <Footer />
     </Router>
