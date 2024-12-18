@@ -55,7 +55,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ width: windowSize.width, height: windowSize.height,}}>
+    <div style={{ width: windowSize.width, height: windowSize.height,}} >
         <Router>
           <Navbar />
           <Routes>
