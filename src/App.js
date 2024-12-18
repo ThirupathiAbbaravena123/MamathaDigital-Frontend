@@ -1,7 +1,7 @@
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from "./components/Header";
 import Address from "./components/Address";
 import Profile from "./components/Profile";
@@ -17,10 +17,28 @@ import RegistrationPage from './pages/RegistrationPage'
 import Footer from './components/Footer'
 import Dashboard from './components/Dashboard'
 import CartItems from './components/CartItems'
-import "./App.css";
-
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.js'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const renderContent = () => {
     switch (activePage) {
@@ -50,8 +68,6 @@ const App = () => {
         <Route path="/stampdetials/:id" element={<Stampmodel />} />
         <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
-        <Route path="/HomePage" element={<HomePage />} />
-  
       </Routes>
       <Footer />
     </Router>

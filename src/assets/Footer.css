@@ -1,7 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    flex-shrink: inherit;
+  }
+  
+*,::after ::before{
+    box-sizing: border-box;
+}
+
 .footer {
     background: linear-gradient(127deg, #9F0707 13%, #2F6980 76%);
     padding: 2rem 0;
     color: #f6f6f6;
+    width: 100%;
+    box-sizing: border-box;
+    display: block; 
+    justify-content: center;
+    unicode-bidi: isolate;
 }
 
 .footer ul {
