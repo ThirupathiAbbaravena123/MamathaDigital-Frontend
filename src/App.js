@@ -1,7 +1,7 @@
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Address from "./components/Address";
@@ -25,6 +25,23 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const renderContent = () => {
     switch (activePage) {
       case "My Profile":
@@ -39,6 +56,7 @@ const App = () => {
   };
 
   return (
+    <div style={{ width: windowSize.width, height: windowSize.height,}}>
     <Router>
       <Navbar />
       <Routes>
@@ -56,6 +74,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Router>
+    </div>
   );
 };
 

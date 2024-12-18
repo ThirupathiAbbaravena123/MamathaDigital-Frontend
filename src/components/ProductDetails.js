@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { useLocation } from "react-router-dom";
 import "./ProductDetails.css";
@@ -55,14 +54,14 @@ const ProductDetails = () => {
                 </option>
               ))}
             </select>
-            <button className="add-to-cart-button">Add to Cart</button>
+            <button className="add-to-cart-button">Add</button>
           </p>
           <div className="quantity-selector">
             <span>Quantity:</span>
             <input type="number" min="1" defaultValue="1" />
           </div>
           
-          <div class="text-container">
+          <div className="text-container">
            <label for="custom-text" class="text-label">Enter Text:</label>
           <textarea id="custom-text" class="custom-text" placeholder="Enter text here"></textarea>
           </div>
@@ -114,8 +113,8 @@ const ProductDetails = () => {
           ★★★★☆
         </div> */}
         <form action="{{post}}" method="POST">
-        <textarea class="custom-text1" name="text" placeholder="Enter comment here"></textarea>
-        <button class="submit" type="submit">Submit</button>
+        <textarea className="custom-text1" name="text" placeholder="Enter comment here"></textarea><br></br>
+        <button className="submit btn btn-danger" type="submit">Submit</button>
        </form>
 
       </div>

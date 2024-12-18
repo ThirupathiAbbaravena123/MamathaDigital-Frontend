@@ -116,7 +116,7 @@ const AcrylicPhotoFrames = () => {
             </div>
             <div className="action-buttons">
               <button
-                className="view-button"
+                className="view-buttons"
                 onClick={() => navigate(`/product-details/${product.id}`, { state: { product } })}
               >View
               </button>
