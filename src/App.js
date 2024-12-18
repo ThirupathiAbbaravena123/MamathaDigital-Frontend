@@ -1,7 +1,7 @@
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Address from "./components/Address";
@@ -21,9 +21,25 @@ import CartItems from './components/CartItems'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const renderContent = () => {
     switch (activePage) {
@@ -39,23 +55,25 @@ const App = () => {
   };
 
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element = {<LoginPage />} />
-        <Route path="/signup" element={<RegistrationPage /> } />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/cartitems" element={<CartItems />} />
-        <Route path="/stampmodel" element={<TopStampModel />} />
-        <Route path="/stampdetials/:id" element={<Stampmodel />} />
-        <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
-        <Route path="/product-details/:id" element={<ProductDetails />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div style={{ width: windowSize.width, height: windowSize.height,}}>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element = {<LoginPage />} />
+            <Route path="/signup" element={<RegistrationPage /> } />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/cartitems" element={<CartItems />} />
+            <Route path="/stampmodel" element={<TopStampModel />} />
+            <Route path="/stampdetials/:id" element={<Stampmodel />} />
+            <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
+            <Route path="/product-details/:id" element={<ProductDetails />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
   );
 };
 
