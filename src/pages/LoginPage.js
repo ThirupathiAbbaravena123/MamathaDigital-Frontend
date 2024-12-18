@@ -55,58 +55,69 @@ const LoginPage = () => {
       };
 
   return (
-    <div className='continter row '>
-      <div className='col-6 mamathalogo' >
-        <img src={Logoimage} className="mamathalogo" alt="..." />
+      <div className='login-container '>
+      <div className="left-section">
+          <img src={Logoimage} alt="Mamatha Logo" className="mamathalogo" />
+        </div>
+        <div className="right-section">
+          <div className="form-box">
+            <form className="form-floating" onSubmit={submitForm}>
+              <h2 className='loginh2'>Login</h2>
+              <p className='subtitle'>Start your Journey now with us</p>
+              <div className=''>
+                  <input type="email" className="form-control" 
+                      id="password" 
+                      name='username'
+                      placeholder="Enter Your Email "
+                      value={formData.username}
+                      onChange={handleChange}
+                      required
+                  /> 
+                  <div className='password-field'>
+                    <input type={showPassword === 'confirmPassword' ? 'text' : 'password'} className="form-control mt-3" 
+                      id="password" 
+                      name='password'
+                      placeholder="Enter Your Password"
+                      value={formData.password}
+                      onChange={handleChange}
+                      required
+                  />
+                    <span className="toggle-password"  onClick={() => ToggleVisibility('confirmPassword')}>
+                    <FontAwesomeIcon icon={showPassword === 'confirmPassword' ? faEyeSlash : faEye} />
+                    </span>
+                  </div>
+                
+              </div>
+              {error && <p className="text-danger text-center mt-3">{error}</p>}
+              <div>
+                <p className='mt-4 '><a href='#' style={{textDecoration:"none",marginRight:"12rem"}}>Forgot Password?</a> </p>
+              </div>
+                  <button type="submit" className='btn btn-danger submitbutton'>Submit</button>
+          </form>
+          <p style={{"fontSize":"13px","marginTop":"15px",}}>Don't have an account ? <a href='/signup'  className='text-decoration-none'>Rigester now</a></p>
+            <p className="or-login">Or Sign Up with</p>
+            <div className="social-buttons">
+              <a
+                href="#"
+                className="social-btn btn btn-outline-primary google"
+                style={{ textDecoration: "none" }}
+              >
+                <i className="bi bi-google fa-google"></i> Google
+              </a>
+              <a
+                href="#"
+                className="social-btn btn btn-outline-primary facebook"
+                style={{ textDecoration: "none" }}
+              >
+                <i className="bi bi-facebook"></i> Facebook
+              </a>
+            </div>
+          </div>
       </div>
-      {/* <div className='col-1  '></div> */}
-      <div className='col-5 '>
-        <form className="form-floating  mt-5" onSubmit={submitForm}>
-            <h2 className='loginh2'>Login</h2>
-            <p className='subtitle'>Start your Journey now with us</p>
-            <div className='ps-5 ms-5 me-5 pe-5'>
-                <input type="email" className="form-control" 
-                    id="password" 
-                    name='username'
-                    placeholder="Enter Your Phone number"
-                    value={formData.username}
-                    onChange={handleChange}
-                    required
-                />
-                <div className='password-field'>
-                  <input type={showPassword === 'confirmPassword' ? 'text' : 'password'} className="form-control mt-3" 
-                    id="password" 
-                    name='password'
-                    placeholder="Enter Your Password"
-                    value={formData.password}
-                    onChange={handleChange}
-                    required
-                />
-                  <span className="toggle-password"  onClick={() => ToggleVisibility('confirmPassword')}>
-                  <FontAwesomeIcon icon={showPassword === 'confirmPassword' ? faEyeSlash : faEye} />
-                  </span>
-                </div>
-               
-            </div>
-            {error && <p className="text-danger text-center mt-3">{error}</p>}
-            <div>
-              <p className='mt-4 '><a href='#' style={{textDecoration:"none",marginRight:"12rem"}}>Forgot Password?</a> </p>
-            </div>
-                <button type="submit" className='btn btn-danger submitbutton'>Submit</button>
-                <p style={{"fontSize":"13px","marginTop":"15px",}}>Don't have an account ? <a href='/signup'  className='text-decoration-none'>Rigester now</a></p>
-        </form>
-        <div style={{"fontSize":"12px"}}>
-            Or  Login with 
-        </div>
-        <div className='row mt-2 d-flex ps-5 pe-5 ms-5 me-5'>
-            <a href='#' className='btn btn-outline-primary col-sm-4 mt-5 ps-1 pe-1 ms-4 me-5'> 
-              <i className="bi bi-google fa-google" ></i> Google</a>
-            <a href='#' className='btn btn-outline-primary col-sm-4 mt-5 ps-1 pe-1 ms-4 '> 
-              <i className="bi bi-facebook"></i> Facebook</a>
-        </div>
+  </div>
 
-      </div>
-    </div>
+
+
   )    
 }
 

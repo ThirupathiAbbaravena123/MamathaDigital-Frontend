@@ -18,7 +18,9 @@ import RegistrationPage from './pages/RegistrationPage'
 import Footer from './components/Footer'
 import Dashboard from './components/Dashboard'
 import CartItems from './components/CartItems'
-import "./App.css";
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.js'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
