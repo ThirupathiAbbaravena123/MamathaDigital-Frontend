@@ -50,7 +50,7 @@ function Dashboard() {
             </div>
           </div>
         <div className='col-10'>
-          <nav class="navbar navbar-expand-lg ">
+          {/* <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
               <h4 className='me-5'>Overview</h4>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,7 @@ function Dashboard() {
                   <i class="fa-solid fa-magnifying-glass mt-1"></i>
                     <input class="me-4 ms-4" type="search" placeholder="Search..." aria-label="Search"/>
                   </div>
-                  {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
+                  <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <ul class="navbar-nav  mb-lg-0">
                   <li class="nav-item">
@@ -85,9 +85,9 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-          </nav>
+          </nav> */}
             <div className='row dashboardContainer container'>
-              <div className='col-4 d-flex mt-2'>
+              <div className='col-4 d-flex mt-1'>
                 <div className='card w-100 cardContainer shadow-sm'>
                   <div className='d-flex justify-content-between mt-3'>
                     <p className='ms-4 mt-2 totalSale'>Total Sales</p>
