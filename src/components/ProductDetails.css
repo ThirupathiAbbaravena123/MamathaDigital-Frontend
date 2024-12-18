@@ -15,14 +15,17 @@
 .image-section {
   flex: 1 1 10%;
   text-align: center;
-  padding-left: 5px;
+  padding-left: 10px;
   box-shadow: 0 4px 10px rgba(230, 225, 225, 0.1); 
   /* margin-bottom: 150px; */
   background-color: #d3d1d1;
   margin-bottom: 130px;
   /* margin-left: -30px; */
   margin-right: -100px;
-  padding-top: -100px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  
+  
   
   
 }
@@ -47,7 +50,7 @@
   font-weight:100;
   color: #282727;
   margin-bottom: 10px;
-  margin-left: -330px;
+  margin-left: -600px;
   padding-top: 40px;
   
 }
@@ -214,6 +217,7 @@ p{
 
 .upload-file {
   margin-bottom: 15px;
+  margin-left: 5px;
 }
 
 .product-description {
