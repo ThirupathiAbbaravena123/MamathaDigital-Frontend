@@ -23,6 +23,24 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
 
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const renderContent = () => {
     switch (activePage) {
       case "My Profile":
