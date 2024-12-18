@@ -54,7 +54,7 @@ const ProductDetails = () => {
                 </option>
               ))}
             </select>
-            <button className="add-to-cart-button">Add</button>
+            <button className="add-to-cart-button">Add to Cart</button>
           </p>
           <div className="quantity-selector">
             <span>Quantity:</span>

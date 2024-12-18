@@ -3,7 +3,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React,{useState,useEffect} from 'react'
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
 import Address from "./components/Address";
 import Profile from "./components/Profile";
 import Orders from "./components/Orders";
@@ -21,26 +20,8 @@ import CartItems from './components/CartItems'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
-
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   const renderContent = () => {
     switch (activePage) {

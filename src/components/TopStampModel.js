@@ -101,7 +101,7 @@ const products = [
               alt={product.title}
               className="product-image"
             />
-            <h4 className="product-title">{product.title}</h4>
+            <h5 className="product-title1">{product.title}</h5>
             <select className="size-dropdown">
               {product.sizeOptions.map((size, index) => (
                 <option key={index} value={size}>
@@ -115,11 +115,11 @@ const products = [
             </div>
             <div className="action-buttons">
               <button
-                className="view-button"
+                className="view-button1"
                 onClick={() => navigate(`/stampdetials/${product.id}`, { state: { product } })}
               >View
               </button>
-              <button className="add-to-cart-button">Add to Cart</button>
+              <button className="add-to-cart-button2">Add to Cart</button>
             </div>
           </div>
         ))}
