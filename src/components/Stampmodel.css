@@ -43,10 +43,53 @@
   margin-top: -40px;
   
  }
- .size-dropdown-section{
+ /* .size-dropdown-section{
   width: 100px;
   margin-left: 40px;
  }
+ .size-dropdown1 {
+  width: 250px;
+  height: 10%;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-bottom: 100px;
+  margin-left: 10px; 
+} */
+
+.size-dropdown-section {
+  width: 20%; /* Makes the section take full width */
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.size-dropdown-section label {
+  font-size: 16px; /* Adjust label font size */
+  font-weight: bold; /* Makes the label bold for better visibility */
+  margin-bottom: 5px; /* Add spacing between the label and dropdown */
+  display: inline-block;
+}
+
+.size-dropdown1 {
+  width: 250px; /* Set the dropdown width */
+  height: auto; /* Dynamically adjusts the height */
+  font-size: 14px; /* Set font size for dropdown items */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px; /* Padding inside the dropdown */
+  margin-top: 10px; /* Space above the dropdown */
+  margin-left: 0; /* Align dropdown with label */
+  overflow-y: auto; /* Enables vertical scroll if needed */
+}
+
+.size-dropdown1 option {
+  font-size: 14px; /* Adjust font size of dropdown options */
+  padding: 5px; /* Add padding to options for better spacing */
+}
+
+ 
 
  .add-to-cart-button1 {
   background-color: #9F0707;
@@ -57,13 +100,15 @@
   margin-left: 30px;
   border-radius:3px;
   cursor: pointer;
-  margin-bottom: -1px;
-  margin-left: 200px;
+  margin-top: 0px;
+  margin-bottom: -30px;
+  margin-left: 260px;
   width: 10px;
   padding-right: 100px;
   padding-left: 40px;
   white-space: nowrap;
   align-self: center;
+  padding-top: -30px;
   
 }
 

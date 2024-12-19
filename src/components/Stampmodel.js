@@ -44,7 +44,7 @@ const Stampdetails = () => {
 
           <div className="size-dropdown-section">
             <label htmlFor="size-select">Select Size:</label>
-            <br />
+            <br/>
             <select id="size-select" className="size-dropdown1">
               {product.sizeOptions.map((size, index) => (
                 <option key={index} value={size}>
@@ -53,6 +53,8 @@ const Stampdetails = () => {
               ))}
             </select>
           </div>
+
+         
 
           <div className="add">
             <button className="add-to-cart-button1">Add</button>

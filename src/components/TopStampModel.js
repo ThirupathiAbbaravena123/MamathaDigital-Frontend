@@ -92,7 +92,7 @@ const products = [
 
   return (
     <div className="top-frame-container">
-      <h5 className="title">Top Stamp model</h5>
+      <h5 className="title1">Top Stamp model</h5>
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
