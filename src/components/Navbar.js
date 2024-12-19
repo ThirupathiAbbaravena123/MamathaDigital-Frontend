@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MyImg from '../assets/profile1.jpg';
 import Mlogo from '../assets/image 55.svg'
+import CartItems from './CartItems';
 
 
 const Navbar = () => {
@@ -100,7 +101,7 @@ const Navbar = () => {
                   marginLeft: '-5px',
                 }}
               >
-                99+
+              {CartItems.length}
                 <span className="visually-hidden">unread messages</span>
               </span>
             </i>

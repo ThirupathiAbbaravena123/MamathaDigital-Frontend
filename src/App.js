@@ -68,6 +68,8 @@ const App = () => {
         <Route path="/stampdetials/:id" element={<Stampmodel />} />
         <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
+        <Route path="/HomePage" element={<HomePage />} />
+  
       </Routes>
       <Footer />
     </Router>

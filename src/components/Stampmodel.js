@@ -23,7 +23,8 @@ const Stampdetails = () => {
   // Color selection handler
   const handleColorSelect = (color) => {
     setSelectedColor(color);
-  };
+  }
+}
 
   return (
     <div className="product-details-container">
@@ -56,6 +57,11 @@ const Stampdetails = () => {
 
          
 
+          <div className="redbtn">
+            <button className="add-to-cart-button1">Add</button>
+          </div>
+
+          <div className="quantity-selector">
           <div className="add">
             <button className="add-to-cart-button1">Add</button>
           </div>
@@ -77,6 +83,7 @@ const Stampdetails = () => {
           </div>
 
           <div className="ink-color-selection">
+            <label>Select Your Ink Colour:</label>
             <label className="demo">Select Your Ink Colour:</label>
             <div className="scroll-container">
               <button
@@ -143,8 +150,8 @@ const Stampdetails = () => {
         </button>
       </div>
     </div>
-  );
-};
+    </div>
+    )
+
 
 export default Stampdetails;
-

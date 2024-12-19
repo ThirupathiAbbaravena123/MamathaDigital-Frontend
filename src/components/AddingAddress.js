@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../assets/PopUp.css';
+import axios from 'axios';
 
-const AddingAddress= ({ onClose }) => {
+const AddingAddress= ({ onClose,onProcced }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -22,11 +23,24 @@ const AddingAddress= ({ onClose }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    try{
+
+      const response=await axios.post('https://your-api-url.com/address', formData);
+
+      if(response.status===200){
+          alert("Address Submitted Successfully!");
+          onProcced(formData);
+          onClose();
+      }else{
+        alert("Failed to Submit address.")
+      }
+    }catch(error){
+      console.error("Error While Submitting address:",error)
+      alert("There was an erroe while Submitting the address.")
+    }
     console.log("Submitted Address Data: ", formData);
-    alert("Address Submitted Successfully!");
-    onClose();
   };
 
   return (
