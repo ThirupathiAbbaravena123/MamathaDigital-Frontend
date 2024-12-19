@@ -109,17 +109,17 @@ const products = [
                 </option>
               ))}
             </select>
-            <div className="price-section">
-              <span className="discounted-price">₹{product.price}</span>
-              <span className="original-price">₹{product.originalPrice}</span>
+            <div className="price-section3">
+              <span className="discounted-price3">₹{product.price}</span>
+              <span className="original-price3">₹{product.originalPrice}</span>
             </div>
-            <div className="action-buttons">
+            <div className="action-button">
               <button
-                className="view-button1"
+                className="view-button"
                 onClick={() => navigate(`/stampdetials/${product.id}`, { state: { product } })}
               >View
               </button>
-              <button className="add-to-cart-button2">Add to Cart</button>
+              <button className="add-to-cart-button">Add to Cart</button>
             </div>
           </div>
         ))}

@@ -1,7 +1,5 @@
-
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Header from "./components/Header";
 import Address from "./components/Address";
 import Profile from "./components/Profile";
@@ -17,11 +15,33 @@ import RegistrationPage from './pages/RegistrationPage'
 import Footer from './components/Footer'
 import Dashboard from './components/Dashboard'
 import CartItems from './components/CartItems'
-import "./App.css";
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.js'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+<<<<<<< HEAD
+  }, []);
+=======
+  }, []);
+
+>>>>>>> d280f82bef12e778324c27b4364a12e92a821136
   const renderContent = () => {
     switch (activePage) {
       case "My Profile":
@@ -36,7 +56,9 @@ const App = () => {
   };
 
   return (
+    <div style={{ width: windowSize.width, height: windowSize.height,}}>
     <Router>
+
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -55,6 +77,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Router>
+    </div>
   );
 };
 

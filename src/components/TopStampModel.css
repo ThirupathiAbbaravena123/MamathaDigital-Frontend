@@ -1,197 +1,137 @@
+/* Container Styles */
 .top-frame-container {
-    max-width: 1300px; /* Increase container width to accommodate more cards */
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h5 {
-    margin-bottom: 20px;
-    font-weight: #313131;
-  
-  }
-  .title{
-    font-weight: #313131;
-    font-size: 10px;
-    margin-right:1100px;
-  }
-  
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically adjust based on screen size */
-    gap: 20px; 
-  }
-  
-  .product-card {
-    border: 1px solid #F6F6F6;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    box-shadow:#F6F6F6;
-    background-color: #F6F6F6;
-  }
-  
-  .product-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  /* .product-title {
-    font-size: 13px;
-    font-weight: #313131;
-    margin-bottom: 10px;
-     font-size: 130px; 
-     font-weight: 200; 
-     margin-bottom: 10px;
-     color: #313131; 
-     white-space: nowrap;
-     overflow: hidden; 
-     text-overflow: ellipsis;  
-     margin-left:700px;
-  }  */
-    .product-title1{
-    margin-left:-50px;
-   } 
-  .title{
-    font-weight: #313131;
-    font-size: 20px;
-    white-space: nowrap;  
-  }
-  
-  .size-dropdown {
-    /* width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 13px;
-    font-weight: #313131; */
-    /* width: 100%;
-    padding: 5px;
-    margin-right: 120px ;
-    font-size: 10px;
-    font-weight:#313131;   */
-    /* color: #313131;  */
-    /* text-align: left; */
-    width: 100%;
-    padding: 5px;
-    margin-right: 120px;
-    font-size: 200px; /* Increased font size */
-    /* font-weight: #313131; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
 
-    text-align: left;
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Product Title */
+.product-title1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Size Dropdown */
+.size-dropdown {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+/* Price Section */
+.price-section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin-bottom: -40px; */
+  margin-top: -40px;
+}
+
+.discounted-price3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF0004;
+  margin-top: -90px;
+  margin-left: -150px;
+}
+
+.original-price3 {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-top: -90px;
+}
+
+/* Action Buttons */
+.action-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.view-button,
+.add-to-cart-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -30px;
+  transition: background-color 0.3s ease;
+}
+
+.view-button {
+  background-color:gray;
+  color: white;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
-  .price-section {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-    
+
+  .product-card {
+    padding: 10px;
   }
-  
-  .discounted-price {
-    font-size: 22px;
-    font-weight: #979797;
-    color: #FF0004;
-    margin-left: 9px;
+
+  .product-title1 {
+    font-size: 16px;
   }
-  
-  .original-price {
-    font-size: 20px;
-    color: #aaa;
-    text-decoration: line-through;
+
+  .discounted-price3,
+  .original-price3 {
+    font-size: 14px;
   }
-  
-  .action-buttons {
-    display: flex;
-    justify-content: space-between;
-   text-align: center;
-  }
-  
-  /* .view-button,
+
+  .view-button,
   .add-to-cart-button {
-    padding: 5px 15px;
-    font-size: 10px; 
-    border: none; 
-    border-radius: 5px;
-    cursor: pointer;
-    width: 20px;
-    height: 30px;
-    margin-bottom: 100px;
-    align-items: center; 
-  }  */
-  
-   /* .view-button {
-    background-color: #D8D5D5;
-    color: #313131;
-    height: 30px;
-    width: 80px;
-  }  */
-  
-   /* .add-to-cart-button {
-    background-color: #9F0707;
-    color: #FFFFFF;
-    margin-right: 10px;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-  } 
-  
-  .view-button:hover {
-    background-color: #0056b3;
+    font-size: 12px;
+    padding: 6px 10px;
   }
-  
-  .add-to-cart-button:hover {
-    background-color: #218838;
-  }
-   */
-   .action-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-     /* gap: -70%;  */
-    padding-bottom: 10px;
-    height:50px;
-    width: -10px;
-  }
-  
-  /* .view-button
-  .add-to-cart-button {
-    padding: 10px 12px;
-    font-size: 10px;
-     border: none; 
-    border-radius: 60px;
-    cursor: pointer;
-    width: 80px;
-    height: 20px;
-    
-    
-  } */
-  
-  .view-button1 {
-    background-color: #D8D5D5;
-    color: #313131;
-    width: 60px;
-    height: 40px;
-    border: #313131;
-    border-radius: 5px;
-  }
-  
-  .add-to-cart-button2 {
-    background-color: #9F0707;
-    color: #FFFFFF;
-    width:130px;
-    border: #9F0707;
-    border-radius: 5px;
-  }
-  
-  /* .view-button:hover {
-    background-color: #9F0707;
-  } 
-  
-  .add-to-cart-button:hover {
-    background-color:#9F0707;
-  } 
-   */
+}

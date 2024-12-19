@@ -1,5 +1,5 @@
 .top-frame-container {
-  max-width: 1300px; /* Increase container width to accommodate more cards */
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -19,7 +19,7 @@ h4 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically adjust based on screen size */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
   gap: 20px; 
 }
 
@@ -40,13 +40,15 @@ h4 {
   margin-bottom: 10px;
 }
 
-.product-title {
-  font-size: 12px;
-  font-weight: #313131;
+.product-title1 {
+  font-size: 16px;
+  font-weight:bold;
   margin-bottom: 10px;
+  padding-right: 45px;
+  
 }
 
-.size-dropdown {
+.size-dropdown1 {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
@@ -54,56 +56,61 @@ h4 {
   font-weight: #313131;
 }
 
-.price-section {
+.price-section1 {
   display: flex;
   justify-content: start;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  /* align-items: center; */
+  gap: 5px;
+  margin-bottom: -90px;
+  padding-top: -10px;
+  margin-left:5px;
+ 
 }
 
-.discounted-price {
+.discounted-price1 {
   font-size: 16px;
   font-weight: #979797;
   color: #FF0004;
+  padding-top: -10px;
+  margin-bottom: 100px;
 }
 
-.original-price {
-  font-size: 14px;
+.original-price1 {
+  font-size: 16px;
   color: #aaa;
   text-decoration: line-through;
+  padding-top: -10px;
+  margin-bottom: 100px;
 }
 
 .action-buttons {
   display: flex;
   justify-content: space-between;
+  margin-top: -10px;
+  text-align: center; 
 }
 
-.view-button,
-.add-to-cart-button {
-  padding: 8px 12px;
+.view-buttons{
+  background-color:#D8D5D5;
+  color:#313131;
+  width: 80px;
+  height: 40px;
+  border-radius: 3px;
+  border: #313131;
+
+}
+.add-to-cart-buttons{
+  padding: 10px 10px;
   font-size: 14px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.view-button {
-  background-color: #D8D5D5;
-  color: #313131;
-}
-
-.add-to-cart-button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
   background-color: #9F0707;
-  color: #FFFFFF;
+  color: #F6F6F6; 
   
-  
-}
-
-.view-button:hover {
-  background-color: #0056b3;
-}
-
-.add-to-cart-button:hover {
-  background-color: #218838;
 }

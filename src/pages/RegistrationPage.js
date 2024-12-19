@@ -72,9 +72,9 @@ const RegistrationPage = () => {
       <div className="right-section">
         <div className="form-box">
           <h2>Register</h2>
-          <p>Start your Journey now with us</p>
-          <p style={{color:"red"}}>{message && <p className="form-message" style={{color:"red"}}>{message}</p>}</p>
-          <form onSubmit={submitFormData}>
+          <p className="Rmessage">Start your Journey now with us</p>
+          {message && <p className="form-message" style={{color:"red"}}>{message}</p>}
+          <form   onSubmit={submitFormData}>
             <input
               type="text"
               name="fullName"

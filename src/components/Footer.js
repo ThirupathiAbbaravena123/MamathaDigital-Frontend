@@ -5,7 +5,7 @@ import Footerlogo from '../assets/image 55.svg'
 
 const Footer = () => {
   return (
-    <div className='footer d-flex row'>
+    <div className='footer container-fluid d-flex row'>
       <div className=' d-flex row justify-content-around'>
         <div className='col-2'>
             <ul>

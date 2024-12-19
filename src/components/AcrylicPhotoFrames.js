@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import "./AcrylicPhotoFrames.css";
-// import img from '../../public/images/'
+
 
 const products = [
   {
@@ -102,25 +102,25 @@ const AcrylicPhotoFrames = () => {
               alt={product.title}
               className="product-image"
             />
-            <h4 className="product-title">{product.title}</h4>
-            <select className="size-dropdown">
+            <h4 className="product-title1">{product.title}</h4>
+            <select className="size-dropdown1">
               {product.sizeOptions.map((size, index) => (
                 <option key={index} value={size}>
                   Size: {size}
                 </option>
               ))}
             </select>
-            <div className="price-section">
-              <span className="discounted-price">₹{product.price}</span>
-              <span className="original-price">₹{product.originalPrice}</span>
+            <div className="price-section1">
+              <span className="discounted-price1">₹{product.price}</span>
+              <span className="original-price1">₹{product.originalPrice}</span>
             </div>
             <div className="action-buttons">
               <button
-                className="view-button"
+                className="view-buttons"
                 onClick={() => navigate(`/product-details/${product.id}`, { state: { product } })}
               >View
               </button>
-              <button className="add-to-cart-button">Add to Cart</button>
+              <button className="add-to-cart-buttons">Add to Cart</button>
             </div>
           </div>
         ))}

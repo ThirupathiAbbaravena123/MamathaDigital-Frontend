@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { useLocation } from "react-router-dom";
 import "./ProductDetails.css";
@@ -7,8 +6,6 @@ import rectangle from '../assets/icons/rectangle.png';
 import circle from '../assets/icons/circle.png';
 import love from '../assets/icons/love.png';
 import square from '../assets/icons/square.png';
-
-
 
 
 const ProductDetails = () => {
@@ -48,7 +45,7 @@ const ProductDetails = () => {
           <div className="price-section">
             <span className="discounted-price">₹{product.price}</span>
             <span className="original-price">₹{product.originalPrice}</span>
-          </div> 
+          </div>
           <p>size:
             <select className="size-dropdown" style={{ width: "140px", height: '35px', margin: '0px' }}>
               {product.sizeOptions.map((size, index) => (
@@ -57,13 +54,18 @@ const ProductDetails = () => {
                 </option>
               ))}
             </select>
-            <button className="add-to-cart-button">Add to Cart</button>
+            <button className="add-to-cart-button">Add </button>
           </p>
           <div className="quantity-selector">
             <span>Quantity:</span>
             <input type="number" min="1" defaultValue="1" />
           </div>
-          <textarea className="custom-text" placeholder="Enter text here"></textarea>
+          
+          <div className="text-container">
+           <label for="custom-text" class="text-label">Enter Text:</label>
+          <textarea id="custom-text" class="custom-text" placeholder="Enter text here"></textarea>
+          </div>
+
           <div className="shape-section">
             <label>Select your Frame Shape:</label>
 
@@ -111,8 +113,8 @@ const ProductDetails = () => {
           ★★★★☆
         </div> */}
         <form action="{{post}}" method="POST">
-        <textarea class="custom-text1" name="text" placeholder="Enter comment here"></textarea>
-        <button class="submit" type="submit">Submit</button>
+        <textarea className="custom-text1" name="text" placeholder="Enter comment here"></textarea><br></br>
+        <button className="submit " type="submit">Submit</button>
        </form>
 
       </div>
