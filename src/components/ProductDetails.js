@@ -54,7 +54,7 @@ const ProductDetails = () => {
                 </option>
               ))}
             </select>
-            <button className="add-to-cart-button">Add to Cart</button>
+            <button className="add-to-cart-button">Add </button>
           </p>
           <div className="quantity-selector">
             <span>Quantity:</span>
@@ -114,7 +114,7 @@ const ProductDetails = () => {
         </div> */}
         <form action="{{post}}" method="POST">
         <textarea className="custom-text1" name="text" placeholder="Enter comment here"></textarea><br></br>
-        <button className="submit btn btn-danger" type="submit">Submit</button>
+        <button className="submit " type="submit">Submit</button>
        </form>
 
       </div>

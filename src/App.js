@@ -1,5 +1,3 @@
-
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React,{useState,useEffect} from 'react'
 import Header from "./components/Header";
@@ -20,6 +18,7 @@ import CartItems from './components/CartItems'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+
 const App = () => {
   const [activePage, setActivePage] = useState("My Profile"); 
   const [windowSize, setWindowSize] = useState({
@@ -37,8 +36,12 @@ const App = () => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+<<<<<<< HEAD
+  }, []);
+=======
   }, []);
 
+>>>>>>> d280f82bef12e778324c27b4364a12e92a821136
   const renderContent = () => {
     switch (activePage) {
       case "My Profile":
@@ -55,6 +58,7 @@ const App = () => {
   return (
     <div style={{ width: windowSize.width, height: windowSize.height,}}>
     <Router>
+
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -68,6 +72,8 @@ const App = () => {
         <Route path="/stampdetials/:id" element={<Stampmodel />} />
         <Route path="/acrylicPhotoFrames" element={<AcrylicPhotoFrames />} />
         <Route path="/product-details/:id" element={<ProductDetails />} />
+        <Route path="/HomePage" element={<HomePage />} />
+  
       </Routes>
       <Footer />
     </Router>

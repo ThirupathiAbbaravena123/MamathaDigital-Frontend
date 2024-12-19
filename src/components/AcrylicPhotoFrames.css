@@ -99,17 +99,18 @@ h4 {
   border: #313131;
 
 }
-.add-to-cart-button {
-  padding: 10px 12px;
+.add-to-cart-buttons{
+  padding: 10px 10px;
   font-size: 14px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 110px;
+  width: 100px;
   height: 40px;
   text-align: center;
   justify-content: center;
   align-items: center; 
-  
+  background-color: #9F0707;
+  color: #F6F6F6; 
   
 }

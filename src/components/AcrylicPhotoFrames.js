@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import "./AcrylicPhotoFrames.css";
-// import img from '../../public/images/'
+
 
 const products = [
   {
@@ -120,7 +120,7 @@ const AcrylicPhotoFrames = () => {
                 onClick={() => navigate(`/product-details/${product.id}`, { state: { product } })}
               >View
               </button>
-              <button className="add-to-cart-button">Add to Cart</button>
+              <button className="add-to-cart-buttons">Add to Cart</button>
             </div>
           </div>
         ))}
