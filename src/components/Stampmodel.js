@@ -36,10 +36,10 @@ const Stampdetails = () => {
           />
         </div>
         <div className="info-section">
-          <h2 className="product-title">{product.title}</h2>
-          <div className="price-section">
-            <span className="discounted-price">₹{product.price}</span>
-            <span className="original-price">₹{product.originalPrice}</span>
+          <h5 className="product-titles">{product.title}</h5>
+          <div className="price-section4">
+            <span className="discounted-price4">₹{product.price}</span>
+            <span className="original-price4">₹{product.originalPrice}</span>
           </div>
 
           <div className="size-dropdown-section">
@@ -54,11 +54,11 @@ const Stampdetails = () => {
             </select>
           </div>
 
-          <div className="redbtn">
+          <div className="add">
             <button className="add-to-cart-button1">Add</button>
           </div>
 
-          <div className="quantity-selector">
+          <div className="quantity-selector1">
             <span>Quantity:</span>
             <input type="number" min="1" defaultValue="1" />
           </div>
@@ -75,7 +75,7 @@ const Stampdetails = () => {
           </div>
 
           <div className="ink-color-selection">
-            <label>Select Your Ink Colour:</label>
+            <label className="demo">Select Your Ink Colour:</label>
             <div className="scroll-container">
               <button
                 onClick={() => scrollColors(-1)}
@@ -110,9 +110,9 @@ const Stampdetails = () => {
             </div>
           </div>
 
-          <div className="upload-section">
-            <label>Upload Your Sample Stamp Design:</label>
-            <input type="file" className="upload-file" />
+          <div className="upload-section1">
+            <label>Upload Your Sample Stamp Design:</label><br></br>
+            <input type="file" className="upload-file1" />
           </div>
         </div>
       </div>
