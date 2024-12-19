@@ -1,12 +1,13 @@
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import myProfileIcon from '../assets/icons/profile.png';
 import myAddressIcon from '../assets/icons/address.png';
 import myOrdersIcon from '../assets/icons/order.png';
 import logoutIcon from '../assets/icons/log.png';
 import Address from './Address';
 import Orders from './Orders';
-// import HomePage from './HomePage'
+//  import HomePage from '../pages/HomePage';
 
 const Profile = () => {
   const [activePage, setActivePage] = useState('My Profile');
@@ -18,7 +19,7 @@ const Profile = () => {
     email: '',
   });
   const [errors, setErrors] = useState({});
-
+  const navigate = useNavigate();
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -49,7 +50,9 @@ const Profile = () => {
     alert('Profile information saved successfully!');
     setIsEditing(false);
   };
-
+    const handleLogout = () => {
+    navigate('/');
+   };
   return (
     <div style={{ display: 'flex', maxWidth: '1200px', margin: '0 auto', }}>
       {/* Sidebar */}
@@ -74,7 +77,9 @@ const Profile = () => {
             alignItems: 'center',
             marginBottom: '15px',
             background: 'none',
-            border: 'none',
+            border:'1px solid',
+            width:'120px',
+            height:'30px',
             cursor: 'pointer',
           }}
           onClick={() => setActivePage('My Profile')}
@@ -88,7 +93,9 @@ const Profile = () => {
             alignItems: 'center',
             marginBottom: '15px',
             background: 'none',
-            border: 'none',
+            border: '1px solid',
+             width:'120px',
+            height:'30px',
             cursor: 'pointer',
           }}
           onClick={() => setActivePage('My Address')}
@@ -102,7 +109,9 @@ const Profile = () => {
             alignItems: 'center',
             marginBottom: '15px',
             background: 'none',
-            border: 'none',
+            border: '1px solid',
+            width:'120px',
+            height:'30px',
             cursor: 'pointer',
           }}
           onClick={() => setActivePage('My Orders')}
@@ -120,6 +129,8 @@ const Profile = () => {
             cursor: 'pointer',
            
           }}
+          onClick={handleLogout}
+
         >
           <img src={logoutIcon} alt="Logout" style={{ marginRight: '10px', width: '18px', }} />
           Logout
@@ -285,6 +296,7 @@ const Profile = () => {
                       padding: '10px 15px',
                       borderRadius: '5px',
                       cursor: 'pointer',
+                    
                     }}
                   >
                     Save 
@@ -297,7 +309,6 @@ const Profile = () => {
 
         {activePage === 'My Address' && <Address />} 
         {activePage === 'My Orders' && <Orders />} 
-        {/* {activePage === 'HomePage' && <HomePage/>} */}
       </div>
     </div>
   );
