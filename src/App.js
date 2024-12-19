@@ -36,7 +36,12 @@ const App = () => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+<<<<<<< HEAD
   }, []);
+=======
+  }, []);
+
+>>>>>>> d280f82bef12e778324c27b4364a12e92a821136
   const renderContent = () => {
     switch (activePage) {
       case "My Profile":
